@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Windsor & Nova Apartment Owners Association</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -74,9 +70,7 @@
       border-right: 1px solid #e0e0e0;
     }
 
-    .right {
-      border-right: none;
-    }
+    .right { border-right: none; }
 
     .president-box {
       display: flex;
@@ -99,6 +93,26 @@
     .president-message p {
       font-size: 0.95rem;
       margin-top: 10px;
+    }
+
+    .members-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .member {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .member img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #ccc;
     }
 
     h2 {
@@ -145,29 +159,14 @@
     }
 
     @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .header img {
-        margin: 0 auto;
-      }
-
-      .president-box {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
+      .header { flex-direction: column; text-align: center; }
+      .header img { margin: 0 auto; }
+      .president-box { flex-direction: column; align-items: center; text-align: center; }
       .left, .right {
         border-right: none !important;
         border-bottom: 1px solid #eee;
       }
-
-      .section:last-child .right {
-        border-bottom: none;
-      }
+      .section:last-child .right { border-bottom: none; }
     }
   </style>
 </head>
@@ -201,24 +200,27 @@
           </div>
         </div>
       </div>
+
       <div class="right">
         <h2>Office Bearers & Board Members</h2>
-        <ul>
-          <li><strong>President</strong> – Dr. Abhishek Bhadoria</li>
-          <li><strong>Vice President</strong> – Tapan Verma</li>
-          <li><strong>Secretary</strong> – Rakesh Gangwar</li>
-          <li><strong>Treasurer</strong> – Vijaypal Malik</li>
-          <li><strong>Vice Treasurer</strong> – Manu Tiwari</li>
-          <li><strong>Vice Secretary</strong> – Sushma Gangwar</li>
-          <li><strong>Board Member</strong> – Nisha Gupta</li>
-          <li><strong>Board Member</strong> – Anuj Aggarwal</li>
-          <li><strong>Board Member</strong> – Pritam Singh Panwar</li>
-          <li><strong>Board Member</strong> – Cp Balyan</li>
-        </ul>
+        <div class="members-list">
+
+          <div class="member"><img src="abhishek.jpg"><span><strong>President:</strong> Dr. Abhishek Bhadouria</span></div>
+          <div class="member"><img src="tapan.jpg"><span><strong>Vice President:</strong> Tapan Verma</span></div>
+          <div class="member"><img src="rakesh.jpg"><span><strong>Secretary:</strong> Rakesh Gangwar</span></div>
+          <div class="member"><img src="vijay.jpg"><span><strong>Treasurer:</strong> Vijaypal Malik</span></div>
+          <div class="member"><img src="manu.jpg"><span><strong>Vice Treasurer:</strong> Manu Tiwari</span></div>
+          <div class="member"><img src="shushma.jpg"><span><strong>Vice Secretary:</strong> Sushma Gangwar</span></div>
+          <div class="member"><img src="pritam.jpg"><span><strong>Board Member:</strong> Pritam Panwar</span></div>          
+          <div class="member"><img src="nisha.jpg"><span><strong>Board Member:</strong> Nisha Gupta</span></div>
+          <div class="member"><img src="anuj.jpg"><span><strong>Board Member:</strong> Anuj Agrawal</span></div>
+          <div class="member"><img src="baliyan.jpg"><span><strong>Board Member:</strong> C.P. Balyan</span></div>
+
+        </div>
       </div>
     </div>
 
-    <!-- Events Section -->
+    <!-- Events -->
     <div class="full-width-section">
       <h2>Upcoming Events</h2>
       <p>🌞 AOA will organize a <strong>Yoga Day</strong> event in Joggers Park on <strong>21st June 2025</strong>.</p>
@@ -267,7 +269,7 @@
       </div>
     </div>
 
-    <!-- Notices Section -->
+    <!-- Notices -->
     <div class="full-width-section">
       <h2>Notices</h2>
       <p>📌 No active notices at this time. Please check back later or contact the secretary for more information.</p>
