@@ -16,9 +16,10 @@
     }
     .header {
       position: relative;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;   /* बढ़ाया स्पेस ताकि नोटिस ओवरलैप न हो */
       margin-bottom: 1rem;
       border-bottom: 2px solid #ccc;
+      min-height: 100px;      /* सुनिश्चित ऊँचाई */
     }
     .header img {
       width: 80px;
@@ -40,7 +41,10 @@
       padding: 0.75rem;
       border-radius: 4px;
       text-align: center;
+      margin-top: -1.5rem;   /* ऊपर से थोड़ा खिसकाएं */
       margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
     }
     h1, h2, h3 { color: #222; margin-top: 1.5rem; }
     table { width: 100%; border-collapse: collapse; margin: 1rem 0; background: #fff; }
@@ -54,8 +58,8 @@
 
   <!-- Header with logos -->
   <div class="header">
-    <!-- Place your logo file in the same folder and name it `logo.png` -->
     <img src="logo.png" alt="Society Logo" class="left">
+    <img src="logo.png" alt="Society Logo" class="right">
   </div>
 
   <!-- Provision Notice at Top -->
@@ -73,13 +77,13 @@
     <li>गेट 5</li>
     <li>गेट 6</li>
     <li>फेज‑1 गेट 4</li>
-    <li> Regallia Heights प्रवेश बिंदु</li>
+    <li>Regallia Heights प्रवेश बिंदु</li>
   </ul>
 
   <h2>3. परिभाषाएँ</h2>
   <ul>
-    <li><strong>रेज़िडेंट्स:</strong> Phase 2 , Phase 1 , Regallia Heights, Sun Tower परिसर में रहने वाले निवासी।</li>
-    <li><strong>कर्मचारी:</strong>  Phase 2 SRE staff, AOA office Staff, Regallia Heights की दुकान/उद्योग से सम्बद्ध व्यक्ति, जिनके पास वैध गेट पास है।</li>
+    <li><strong>रेज़िडेंट्स:</strong> Phase 2, Phase 1, Regallia Heights, Sun Tower परिसर में रहने वाले निवासी।</li>
+    <li><strong>कर्मचारी:</strong> Phase 2 SRE स्टाफ, AOA ऑफिस स्टाफ, Regallia Heights की दुकान/उद्योग से सम्बद्ध व्यक्ति, जिनके पास वैध गेट पास है।</li>
     <li><strong>गैर‑कर्मचारी श्रमिक/मजदूर:</strong> ठेके पर कार्यरत कर्मचारी, मिस्त्री, घरेलू सहायिका आदि, जिनके पास वैध गेट पास है।</li>
     <li><strong>डिलीवरी ब्वॉय:</strong> पार्सल/खाद्य सामग्री आदि लाने वाले व्यक्ति।</li>
     <li><strong>वाणिज्यिक वाहन:</strong> मूवर्स, पैकर्स, मालवाहक ट्रक, ट्रेक्टर, अन्य भारी वाहन।</li>
@@ -157,7 +161,7 @@
       </tr>
       <tr>
         <td>वाणिज्यिक वाहन</td>
-        <td>फेज‑2 सामग्री: गेट 5<br></td>
+        <td>फेज‑2 सामग्री: गेट 5</td>
         <td>—</td>
         <td>Regallia Heights, फेज‑1 सामग्री: गेट 4</td>
         <td>—</td>
@@ -183,7 +187,7 @@
     यदि रेज़िडेंट्स रिक्शा में बैठे हों, तो उनसे संपर्क करें और वे किस फ्लैट जा रहे हैं, यह सत्यापित करें; उसके बाद ही उन्हें प्रवेश की अनुमति दें।
   </p>
 
-  <h3>5.6 डिलीवरी ब्वॉय</h3
+  <h3>5.6 डिलीवरी ब्वॉय</h3>
   <p>सभी डिलीवरी ब्वॉय केवल गेट 5 से प्रवेश/निकास करेंगे। MYGATE ऐप पर पंजीकरण अनिवार्य।</p>
 
   <h2 class="highlight">5.7 प्रमुख नोटिस</h2>
@@ -222,9 +226,8 @@
   </ul>
 
   <footer>
-    <p><strong>© 2025  By - AOA Board – WinAOA</strong></p>
+    <p><strong>© 2025  By – AOA Board – WinAOA</strong></p>
   </footer>
-
 
 </body>
 </html>
