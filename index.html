@@ -1,47 +1,215 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WINAOA - Phase 2, Shipra Sun City, Indirapuram, Ghaziabad</title>
+  <title>Windsor & Nova Apartment Owners Association</title>
   <style>
-    body { 
-      font-family: sans-serif; 
-      max-width: 800px; 
-      margin: auto; 
-      padding: 1rem; 
-      line-height: 1.6; 
-      background: #f9f9f9;
-      color: #333;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    h1 { color: #00539C; }
-    nav ul { list-style: none; padding: 0; }
-    nav li { margin: 0.5rem 0; }
-    nav a { text-decoration: none; color: #00539C; font-size: 1.1rem; }
-    nav a:hover { text-decoration: underline; }
-    footer { margin-top: 2rem; font-size: 0.9rem; color: #666; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f2f7f4, #e0f0ea);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .header {
+      background: #8cc8ae;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .header img {
+      max-width: 80px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: #e9f5f0;
+    }
+
+    .section {
+      background: #ffffff;
+      margin-top: 30px;
+      display: flex;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+      border: 1px solid #d3e2dc;
+    }
+
+    .left, .right {
+      flex: 1;
+      padding: 25px;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .right {
+      border-right: none;
+    }
+
+    .president-box {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .president-photo img {
+      max-width: 140px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+    }
+
+    .president-message h3 {
+      margin: 0;
+      color: #2a4f3f;
+    }
+
+    .president-message p {
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #3e715b;
+      border-bottom: 1px solid #c5ded2;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2b7a78;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <h1>WINAOA – Phase 2</h1>
-  <p><em>Shipra Sun City, Indirapuram, Ghaziabad</em></p>
-  
-  <p>निवासी इस साइट पर समाज से संबंधित सभी दस्तावेज़, संपर्क विवरण, नियमावली, एवं अन्य जरूरी जानकारी पा सकते हैं। नीचे दिए गए लिंक से ब्राउज़ करें:</p>
+    <!-- Header -->
+    <div class="header">
+      <img src="logo.png" alt="Society Logo">
+      <div class="header-text">
+        <h1>Windsor and Nova Apartment Owners Association</h1>
+        <p>Shipra Sun City, Indirapuram, Ghaziabad</p>
+      </div>
+    </div>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">होम</a></li>
-      <li><a href="SOP.html">सिक्योरिटी टीम SOP</a></li>
-      <li><a href="bylaws.html">सोसाइटी नियमावली</a></li>
-      <li><a href="contacts.html">प्रबंधन संपर्क</a></li>
-      <li><a href="docs.html">अन्य दस्तावेज़</a></li>
-    </ul>
-  </nav>
+    <!-- Section 1: President + Office Bearers -->
+    <div class="section">
+      <div class="left">
+        <div class="president-box">
+          <div class="president-photo">
+            <img src="abhishek.jpg" alt="President Photo">
+          </div>
+          <div class="president-message">
+            <h3>डॉ. अभिषेक भदौरिया</h3>
+            <p><strong>अध्यक्ष का संदेश:</strong></p>
+            <p>हमारे विंडसर एवं नोवा अपार्टमेंट्स के सभी निवासियों को मेरा हार्दिक अभिवादन।</p>
+            <p>यह टाउनशिप केवल इमारतों का समूह नहीं, बल्कि एक ऐसा परिवार है जहाँ हम सभी मिलकर सौहार्द, सुरक्षा और समृद्धि का वातावरण बनाते हैं।</p>
+            <p>मेरा विश्वास है कि यदि हम संवाद, सहयोग और आपसी सम्मान को प्राथमिकता दें, तो हम अपने समाज को न केवल सुरक्षित और व्यवस्थित, बल्कि एक आदर्श निवास स्थान भी बना सकते हैं।</p>
+            <p>हम हर दिन एक बेहतर कल की ओर बढ़ रहे हैं — स्वच्छता, पारदर्शिता और सामूहिक भागीदारी के साथ।</p>
+            <p>आइए, हम सभी मिलकर इस छोटे से संसार को और भी सुंदर, शांत और सुव्यवस्थित बनाएं।</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Office Bearers & Board Members</h2>
+        <ul>
+          <li><strong>President</strong> – Dr. Abhishek Bhadoria</li>
+          <li><strong>Vice President</strong> – Tapan Verma</li>
+          <li><strong>Secretary</strong> – Rakesh Gangwar</li>
+          <li><strong>Treasurer</strong> – Vijaypal Malik</li>
+          <li><strong>Board Member</strong> – Manu Tiwari</li>
+          <li><strong>Board Member</strong> – Sushma Gangwar</li>
+          <li><strong>Board Member</strong> – Nisha Gupta</li>
+          <li><strong>Board Member</strong> – Anuj Aggarwal</li>
+          <li><strong>Board Member</strong> – Pritam Singh Panwar</li>
+          <li><strong>Board Member</strong> – Cp Balyan</li>
+        </ul>
+      </div>
+    </div>
 
-  <footer>
-    <p>© 2025 WINAOA – Phase 2, Shipra Sun City</p>
-  </footer>
+    <!-- Section 2 -->
+    <div class="section">
+      <div class="left">
+        <h2>Security Related</h2>
+        <ul>
+          <li><a href="SOP.html">Security Team SOP</a></li>
+          <li><a href="#">CCTV Monitoring Policy</a></li>
+          <li><a href="#">Visitor Entry Guidelines</a></li>
+          <li><a href="#">Emergency Contacts</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <h2>Maintenance Related</h2>
+        <ul>
+          <li><a href="#">Service Schedule</a></li>
+          <li><a href="#">Complaint Form</a></li>
+          <li><a href="#">AMC Contractors List</a></li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- Section 3 -->
+    <div class="section">
+      <div class="left">
+        <h2>Financials</h2>
+        <ul>
+          <li><a href="#">Annual Budget</a></li>
+          <li><a href="#">Monthly Expenses</a></li>
+          <li><a href="#">Audit Reports</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <h2>Forms & Contracts</h2>
+        <ul>
+          <li><a href="#">Resident Registration Form</a></li>
+          <li><a href="#">Vendor Agreement</a></li>
+          <li><a href="#">NOC Request Form</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
