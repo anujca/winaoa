@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Windsor & Nova Apartment Owners Association</title>
   <style>
     * {
@@ -127,6 +127,23 @@
       text-decoration: underline;
     }
 
+    .full-width-section {
+      background: #ffffff;
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      border: 1px solid #d3e2dc;
+    }
+
+    .event-img {
+      margin-top: 15px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
@@ -159,19 +176,19 @@
 
     <!-- Header -->
     <div class="header">
-      <img src="logo.png" alt="Society Logo">
+      <img src="logo.png" alt="Society Logo" />
       <div class="header-text">
         <h1>Windsor and Nova Apartment Owners Association</h1>
         <p>Shipra Sun City, Indirapuram, Ghaziabad</p>
       </div>
     </div>
 
-    <!-- Section 1 -->
+    <!-- President & Office Bearers -->
     <div class="section">
       <div class="left">
         <div class="president-box">
           <div class="president-photo">
-            <img src="abhishek.jpg" alt="President Photo">
+            <img src="abhishek.jpg" alt="President Photo" />
           </div>
           <div class="president-message">
             <h3>डॉ. अभिषेक भदौरिया</h3>
@@ -201,7 +218,15 @@
       </div>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Events Section -->
+    <div class="full-width-section">
+      <h2>Upcoming Events</h2>
+      <p>🌞 AOA will organize a <strong>Yoga Day</strong> event in Joggers Park on <strong>21st June 2025</strong>.</p>
+      <p>All residents are cordially invited to participate and celebrate wellness together!</p>
+      <img src="event.jpg" alt="Yoga Day Event" class="event-img" />
+    </div>
+
+    <!-- Security & Maintenance -->
     <div class="section">
       <div class="left">
         <h2>Security Related</h2>
@@ -222,7 +247,7 @@
       </div>
     </div>
 
-    <!-- Section 3 -->
+    <!-- Finance & Forms -->
     <div class="section">
       <div class="left">
         <h2>Financials</h2>
@@ -240,6 +265,12 @@
           <li><a href="#">NOC Request Form</a></li>
         </ul>
       </div>
+    </div>
+
+    <!-- Notices Section -->
+    <div class="full-width-section">
+      <h2>Notices</h2>
+      <p>📌 No active notices at this time. Please check back later or contact the secretary for more information.</p>
     </div>
 
   </div>
