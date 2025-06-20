@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Windsor & Nova Apartment Owners Association</title>
   <style>
     * {
@@ -32,6 +33,7 @@
       align-items: center;
       gap: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
     }
 
     .header img {
@@ -41,10 +43,11 @@
 
     .header-text {
       flex: 1;
+      min-width: 200px;
     }
 
     .header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 5px;
     }
 
@@ -57,6 +60,7 @@
       background: #ffffff;
       margin-top: 30px;
       display: flex;
+      flex-wrap: wrap;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.05);
       overflow: hidden;
@@ -66,6 +70,7 @@
     .left, .right {
       flex: 1;
       padding: 25px;
+      min-width: 300px;
       border-right: 1px solid #e0e0e0;
     }
 
@@ -75,6 +80,7 @@
 
     .president-box {
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
       align-items: flex-start;
     }
@@ -120,6 +126,32 @@
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header img {
+        margin: 0 auto;
+      }
+
+      .president-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .left, .right {
+        border-right: none !important;
+        border-bottom: 1px solid #eee;
+      }
+
+      .section:last-child .right {
+        border-bottom: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -134,7 +166,7 @@
       </div>
     </div>
 
-    <!-- Section 1: President + Office Bearers -->
+    <!-- Section 1 -->
     <div class="section">
       <div class="left">
         <div class="president-box">
@@ -162,9 +194,9 @@
           <li><strong>Vice Treasurer</strong> – Manu Tiwari</li>
           <li><strong>Vice Secretary</strong> – Sushma Gangwar</li>
           <li><strong>Board Member</strong> – Nisha Gupta</li>
-          <li><strong>Board Member</strong> – Anuj Kumar Agarwal</li>
+          <li><strong>Board Member</strong> – Anuj Aggarwal</li>
           <li><strong>Board Member</strong> – Pritam Singh Panwar</li>
-          <li><strong>Board Member</strong> – C.P.Balyan</li>
+          <li><strong>Board Member</strong> – Cp Balyan</li>
         </ul>
       </div>
     </div>
